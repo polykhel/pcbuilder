@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: pcb-gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: pcb-config
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true

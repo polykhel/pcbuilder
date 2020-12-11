@@ -1,0 +1,205 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-initial-permissions
+      author: mpollente
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: CREATE_USER
+            tableName: permission
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: name
+                  value: EDIT_USER
+            tableName: permission
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: name
+                  value: DELETE_USER
+            tableName: permission
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: name
+                  value: VIEW_ALL_USERS
+            tableName: permission
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 5
+              - column:
+                  name: name
+                  value: VIEW_USER
+            tableName: permission
+  - changeSet:
+      id: add-initial-roles
+      author: mpollente
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: ADMIN
+            tableName: role
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: name
+                  value: USER
+            tableName: role
+  - changeSet:
+      id: add-initial-users
+      author: mpollente
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: username
+                  value: admin
+              - column:
+                  name: password
+                  value: '{bcrypt}$2y$12$TVorHjfJ.YCq7TupOjPfmuAcVcCy49ShBDsG2td3wChSn68oZ3fv6'
+              - column:
+                  name: enabled
+                  value: Y
+              - column:
+                  name: account_non_expired
+                  value: Y
+              - column:
+                  name: credentials_non_expired
+                  value: Y
+              - column:
+                  name: account_non_locked
+                  value: Y
+            tableName: user
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: username
+                  value: user
+              - column:
+                  name: password
+                  value: '{bcrypt}$2y$12$TVorHjfJ.YCq7TupOjPfmuAcVcCy49ShBDsG2td3wChSn68oZ3fv6'
+              - column:
+                  name: enabled
+                  value: Y
+              - column:
+                  name: account_non_expired
+                  value: Y
+              - column:
+                  name: credentials_non_expired
+                  value: Y
+              - column:
+                  name: account_non_locked
+                  value: Y
+            tableName: user
+  - changeSet:
+      id: add-initial-permission-role
+      author: mpollente
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: permission_id
+                  value: 1
+              - column:
+                  name: role_id
+                  value: 1
+            tableName: permission_role
+        - insert:
+            columns:
+              - column:
+                  name: permission_id
+                  value: 2
+              - column:
+                  name: role_id
+                  value: 1
+            tableName: permission_role
+        - insert:
+            columns:
+              - column:
+                  name: permission_id
+                  value: 3
+              - column:
+                  name: role_id
+                  value: 1
+            tableName: permission_role
+        - insert:
+            columns:
+              - column:
+                  name: permission_id
+                  value: 4
+              - column:
+                  name: role_id
+                  value: 1
+            tableName: permission_role
+        - insert:
+            columns:
+              - column:
+                  name: permission_id
+                  value: 2
+              - column:
+                  name: role_id
+                  value: 2
+            tableName: permission_role
+        - insert:
+            columns:
+              - column:
+                  name: permission_id
+                  value: 3
+              - column:
+                  name: role_id
+                  value: 2
+            tableName: permission_role
+  - changeSet:
+      id: add-initial-role-user
+      author: mpollente
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: role_id
+                  value: 1
+              - column:
+                  name: user_id
+                  value: 1
+            tableName: role_user
+        - insert:
+            columns:
+              - column:
+                  name: role_id
+                  value: 2
+              - column:
+                  name: user_id
+                  value: 2
+            tableName: role_user
+

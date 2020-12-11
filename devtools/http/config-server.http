@@ -1,0 +1,12 @@
+POST http://localhost:8888/encrypt
+Content-Type: application/x-www-form-urlencoded
+
+d3v3L
+
+###
+
+POST http://localhost:8888/actuator/refresh
+
+###
+
+GET http://localhost:8888/application/default

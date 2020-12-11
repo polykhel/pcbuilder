@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: ./db/changelog/2020-Dec-09-0457.yml
+  - include:
+      file: ./db/changelog/2020-Dec-09-0458.yml

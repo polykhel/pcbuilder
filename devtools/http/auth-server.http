@@ -1,0 +1,2 @@
+POST http://localhost:8082/oauth/token?grant_type=password&username=user&password=123qwe
+Authorization: Basic pcb pcbsecret

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: pcb-auth
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: pcb-config
