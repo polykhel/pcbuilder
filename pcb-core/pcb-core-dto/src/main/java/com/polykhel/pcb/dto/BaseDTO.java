@@ -2,10 +2,13 @@ package com.polykhel.pcb.dto;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
-public class BaseDTO {
+public class BaseDTO implements Serializable {
+
+    private static final long serialVersionUID = 2L;
 
     /**
      * Unique identifier for the object.

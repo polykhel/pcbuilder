@@ -84,7 +84,7 @@ databaseChangeLog:
                   value: admin
               - column:
                   name: password
-                  value: '{bcrypt}$2y$12$TVorHjfJ.YCq7TupOjPfmuAcVcCy49ShBDsG2td3wChSn68oZ3fv6'
+                  value: '$2a$04$O.a/ymAMcG/g3vzQRWtzQeWV/7qjqabiuNl6dvTE0l8HdkRVF10ha'
               - column:
                   name: enabled
                   value: Y
@@ -108,7 +108,7 @@ databaseChangeLog:
                   value: user
               - column:
                   name: password
-                  value: '{bcrypt}$2y$12$TVorHjfJ.YCq7TupOjPfmuAcVcCy49ShBDsG2td3wChSn68oZ3fv6'
+                  value: '$2a$04$O.a/ymAMcG/g3vzQRWtzQeWV/7qjqabiuNl6dvTE0l8HdkRVF10ha'
               - column:
                   name: enabled
                   value: Y
