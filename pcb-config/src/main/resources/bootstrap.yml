@@ -1,25 +1,21 @@
-server:
-  port: 8888
-
 spring:
   application:
     name: pcb-config
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/polykhel/pcbuilder-config-store
+        composite:
+          - type: native
+            search-locations: file:////C:/Users/polle/Projects/pcbuilder-config-store
+            bootstrap: true
         bootstrap: true
-      label: main
+        default-label: main
+  profiles:
+    active: dev
+    include: composite
 
 encrypt:
   key-store:
     location: classpath:/config-server.jks
     password: o88D%70yfbX
     alias: config-server-key
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh

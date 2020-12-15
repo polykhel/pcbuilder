@@ -14,7 +14,7 @@
         <module>pcb-discovery</module>
         <module>pcb-gateway</module>
         <module>pcb-config</module>
-        <module>pcb-auth</module>
+        <module>pcb-main</module>
     </modules>
 
 </project>

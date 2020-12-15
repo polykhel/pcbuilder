@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.polykhel.pcb</groupId>
+        <artifactId>pcb-main</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>pcb-main-api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>PCBuilder :: Main :: API</name>
+    <description>Main API classes of PCBuilder</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.polykhel.pcb</groupId>
+            <artifactId>pcb-core-app</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

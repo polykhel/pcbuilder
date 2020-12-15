@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: pcb-main
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: pcb-config
+    loadbalancer:
+      ribbon:
+        enabled: false
